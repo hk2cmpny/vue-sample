@@ -1,5 +1,4 @@
 {
-  "homepage": "https://hk2cmpny.github.io/vue-sample",
   "name": "vue-tryingout",
   "version": "0.0.0",
   "private": true,
@@ -7,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "ghrbuild": "vite build --base=/vue-sample"
     "preview": "vite preview",
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",

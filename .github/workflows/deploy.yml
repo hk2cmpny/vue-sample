@@ -36,6 +36,10 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Checking index file
+        run: cat ./dist/index.html
+      - name: Checking assets
+        run: ls ./dist/assets
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
